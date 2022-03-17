@@ -1,0 +1,57 @@
+.home_information {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    border-left: 5px solid;
+    padding-left: 50px;
+    overflow: hidden;
+}
+
+.home_information h1 {
+    font-size: 4rem;
+    font-weight: 700;
+}
+.home_information p {
+    font-size: 1.5rem;
+    opacity: 0.5;
+    margin-bottom: 40px;
+}
+
+.home_information button {
+    width: 300px;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    background: transparent;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+    border: 2px solid #fff;
+}
+
+.home_information button:hover {
+    background: linear-gradient(to right, #0099ff, #0066cc);
+    border: none;
+}
+
+.animation::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    width: 50%;
+    height: 100%;
+    background: #fff;
+    overflow: hidden;
+    animation: moveToRight 1s ease-out;
+}
+
+@keyframes moveToRight {
+    0% {
+        transform: translateX(0);
+    }
+}

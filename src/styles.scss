@@ -13,5 +13,27 @@
 }
 
 body {
-    background: #000;
+    background: rgb(19, 21, 32);
+}
+
+.principal_bg {
+    position: fixed;
+    top: -25%;
+    left: -25%;
+    width: 150%;
+    height: 150%;
+    transition: all 0.2s ease;
+    opacity: 0.5;
+    animation: bibrante 5s linear infinite;
+}
+
+@keyframes bibrante {
+    49% {
+        opacity: 0.5;
+        filter: blur(0px);
+    }
+    50% {
+        opacity: 1.5;
+        filter: blur(1px);
+    }
 }
