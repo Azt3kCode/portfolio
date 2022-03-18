@@ -18,22 +18,39 @@ body {
 
 .principal_bg {
     position: fixed;
-    top: -25%;
-    left: -25%;
+    top: 0;
+    left: 0;
     width: 150%;
     height: 150%;
+    overflow: hidden;
     transition: all 0.2s ease;
     opacity: 0.5;
     animation: bibrante 5s linear infinite;
+    z-index: -9999;
+}
+
+#bg {
+    position: absolute;
+    top: 0;
+    left: -25%;
+    width: 100%;
+    height: 100%;
+    background-image: url(./assets/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+// Desabilitar scrolling bar
+::-webkit-scrollbar {
+    display: none;
 }
 
 @keyframes bibrante {
     49% {
         opacity: 0.5;
-        filter: blur(0px);
     }
     50% {
         opacity: 1.5;
-        filter: blur(1px);
     }
 }

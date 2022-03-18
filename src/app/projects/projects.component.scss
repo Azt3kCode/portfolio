@@ -1,0 +1,59 @@
+.projects_container {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+h2 {
+    color: #fff;
+    font-size: 4rem;
+}
+.card {
+    border: none;
+    filter: saturate(50%);
+    transition: all 0.2s ease;
+}
+
+.card-body {
+    background: rgb(16, 27, 46);
+    color: #fff;
+}
+
+.card-title {
+    color: #0099ff;
+}
+
+.btn {
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.btn-primary {
+    width: 200px;
+    height: 40px;
+    color: #fff;
+    background: transparent;
+    border: 2px solid #fff;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(to right, #0099ff, #0066cc);
+    border: none;
+    letter-spacing: 2px;
+    text-decoration: underline;
+}
+
+.card-img-top {
+    background-color: rgb(16, 27, 46);
+}
+
+.card:hover {
+    filter: saturate(100%);
+}

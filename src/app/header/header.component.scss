@@ -4,10 +4,12 @@
     height: 75px;
     top: 0;
     left: 0;
+    z-index: 9999;
+    background: rgb(16, 27, 46);
 }
 
 .container  {
-    width: 50%;
+    width: 750%;
     height: 100%;
 }
 
@@ -19,6 +21,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+h1 {
+    color: #fff;
+    display: flex;
+    align-items: center;
 }
 
 a {
@@ -34,6 +42,7 @@ a {
 }
 
 a:hover {
+    text-decoration: underline;
     color: #fff;
     letter-spacing: 2px;
 }

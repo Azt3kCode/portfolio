@@ -10,11 +10,9 @@ if (environment.production) {
 
 platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.error(err));
- 
-const element: any = document.getElementById('principal_bg');
 
-element.addEventListener('mousemove', (e: any) => {
-  const x = e.clientX / 50;
-  const y = e.clientY / 50;
-  element.style.transform = `translate(${x}px, ${y}px)`;
+const bg: any = document.getElementById('bg');
+
+window.addEventListener('scroll', () => {
+  bg.style.top = -(window.pageYOffset / 5) + 'px';
 });
